@@ -8,3 +8,5 @@ Feature: welcome page
       Then I should see "Depolarize"
       And I should see "Liberal"
       And I should see "Conservative"
+      And I click on "Liberal"
+      Then I should be on the welcome page
