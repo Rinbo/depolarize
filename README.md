@@ -1,4 +1,3 @@
-# depolarize
-------------
+# DEPOLARIZE
 
-Depolarize is a web-app that gives people the chance of extending their political convictions by reading curated and top-quality news from the other isle. 
+An app for reducing polarization in western democracies. Choose your political affiliation and be served thoughtful opinions from the opposite political camp.

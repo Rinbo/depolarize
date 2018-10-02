@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: depolarize_development
+
+test:
+  <<: *default
+  database: depolarize_test
+
+production:
+  <<: *default
+  database: depolarize_production
+  username: depolarize
+  password: <%= ENV['DEPOLARIZE_DATABASE_PASSWORD'] %>
