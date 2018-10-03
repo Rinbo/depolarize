@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'feeds/index'
-  root 'welcome#index'
+  root controller: :welcome, action: :index
+  resources :feeds,  only: [:index]
 end

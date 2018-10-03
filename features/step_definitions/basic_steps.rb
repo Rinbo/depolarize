@@ -3,5 +3,5 @@ Given("I am on the welcome page") do
 end
 
 Given("I am on the news feed") do
-  visit feeds_index_path
+  visit feeds_path
 end
