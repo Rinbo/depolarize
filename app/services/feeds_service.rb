@@ -13,5 +13,4 @@ module FeedsService
     response = JSON.parse(req.read)
     response["articles"]
   end
-
 end
