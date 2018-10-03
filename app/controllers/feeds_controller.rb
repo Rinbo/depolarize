@@ -1,5 +1,5 @@
-class FeedController < ApplicationController
+class FeedsController < ApplicationController
   def index    
-    @articles = FeedService.get_feed
+    @articles = FeedsService.get_feed
   end
 end
