@@ -1,0 +1,13 @@
+
+<h1 class="text-center mt-4">Depolarized Feed</h1>
+
+<section class="container mx-auto px-4">
+  <% @articles.each do |article| %>
+    <h2 class="my-4 article-title"><%= article["title"]%></h2>
+    <p class="my-4"><%= article["description"] %></p>
+    <p class="my-4 article-content"><%=  article["content"] %></p>
+    <p class="my-4"><%=link_to "...Click to continue reading", article["url"] %></p>       
+    <p> By: <%= article["author"] %> </p>
+    
+  <% end %>
+</section>
