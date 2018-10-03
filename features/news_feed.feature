@@ -6,6 +6,6 @@ Feature: News Feeds
     Scenario: User should see articles from news-api
         Given I am on the news feed
         Then I should see "Depolarized Feed"
-        And I should see '.article-title'
-        And I should see '.article-content'
+        And I should see a '.article-title' element
+        And I should see a '.article-content' element
         And I should see "...Click to continue reading"
