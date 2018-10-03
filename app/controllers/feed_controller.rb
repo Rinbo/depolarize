@@ -1,6 +1,5 @@
 class FeedController < ApplicationController
-  def index
-    #@articles = FeedService.get_feed("bitcoin")
-    @articles = FeedService.get_feed2
+  def index    
+    @articles = FeedService.get_feed
   end
 end
