@@ -18,3 +18,8 @@ Given("I click on the {string} link") do |link|
   click_on link
 end
 
+Given("the following registered users exist") do |table|
+  table.hashes.each do |user|
+    FactoryBot.create(:user, user)
+  end
+end

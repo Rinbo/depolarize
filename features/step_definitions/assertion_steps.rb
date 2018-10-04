@@ -7,3 +7,6 @@ Then("I should see a {string} element") do |element|
   expect(page).to have_css element
 end
 
+Then("I am on the login page") do
+  expect(current_path).to eq user_session_path
+end
