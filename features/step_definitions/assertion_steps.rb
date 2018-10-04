@@ -6,3 +6,4 @@ end
 Then("I should see a {string} element") do |element|
   expect(page).to have_css element
 end
+

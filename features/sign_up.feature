@@ -9,4 +9,4 @@ Feature: Sign up page (with Devise)
         And I fill in "Password" with "mypassword"
         And I fill in "Password confirmation" with "mypassword"        
         And I click on the "Sign up" link
-        Then I see the message "Welcome! You have signed up successfully."
+        Then I should see "Welcome! You have signed up successfully."
