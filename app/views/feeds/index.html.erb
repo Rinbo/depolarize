@@ -1,2 +1,2 @@
-<%= rand(1..2).odd? ? (render 'partials/liberal_feed') : (render 'partials/conservative_feed') %>
+<%= @switch.odd? ? (render 'partials/liberal_feed') : (render 'partials/conservative_feed') %>
 
