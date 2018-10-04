@@ -12,4 +12,8 @@
   @apply bg-blue-dark;
 }
 
+.article-paragraph {
+  @apply text-grey-darker text-base my-4;
+}
+
 @tailwind utilities;
