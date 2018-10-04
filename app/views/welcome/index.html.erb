@@ -8,8 +8,9 @@
   </div>
   <div class="text-center font-mono mt-32">
     <p class="text-2xl mb-10">Choose your political affiliation</p>
-    
-    <a href="https://www.google.se/"><button class="btn btn-blue w-48">Liberal</button></a>
+    <form method="get" action="/users/sign_up">
+      <button name="role" value="liberal" type="submit" class="btn btn-blue w-48">Liberal</button>
+    </form>
     <a href="/"><button class="btn btn-blue w-48">Conservative</button></a>
   </div>
 </section>
