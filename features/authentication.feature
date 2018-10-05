@@ -28,3 +28,9 @@ Feature: Authentication (with Devise)
         Then I should see "Signed in successfully."
         When I click on the "Signout" link
         Then I should see "Signed out successfully."
+    
+    Scenario: Registered user can successfully sign-out
+        Given I am logged in as "hi@email.com"
+        And I am on the welcome page
+        And I click on the "Signout" link
+        Then I should see "Signed out successfully."
