@@ -16,7 +16,7 @@ Feature: Authentication (with Devise)
         And I fill in "Password confirmation" with "mypassword"        
         When I click on the "Sign up" link
         Then I should see "Welcome! You have signed up successfully."
-        And I should see "Depolarized feed"
+        And I should see "Depolarized Feed"
 
     Scenario: Registered user can successfully login
         Given I am on the welcome page
