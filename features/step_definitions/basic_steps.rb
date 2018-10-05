@@ -18,8 +18,17 @@ Given("I click on the {string} link") do |link|
   click_on link
 end
 
+When("I click on the {string} button") do |button|
+  click_button button
+end
+
 Given("the following registered users exist") do |table|
   table.hashes.each do |user|
     FactoryBot.create(:user, user)
   end
-end   
+end
+
+Given("I am logged in as {string}") do |email|
+  @user = User.find_by(email: email)
+  login_as @user
+end

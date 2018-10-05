@@ -1,7 +1,6 @@
 class FeedsController < ApplicationController
-  @@arr = (1..100).to_a
-  def index
-    @switch = @@arr.pop 
+  before_action :authenticate_user!
+  def index   
     @liberal_feed = FeedsService.get_feed('opinion', 'usa-today', 'usatoday.com')
     @conservative_feed = FeedsService.get_feed('opinion', 'the-new-york-times', 'nytimes.com')    
   end

@@ -1,2 +1,2 @@
-<%= @switch.odd? ? (render 'partials/liberal_feed') : (render 'partials/conservative_feed') %>
+<%= render "partials/#{current_user.affiliation}_feed"%>
 
