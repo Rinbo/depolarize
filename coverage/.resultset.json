@@ -1,0 +1,63 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/albertstjarne/CA/depolarize/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/albertstjarne/CA/depolarize/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/albertstjarne/CA/depolarize/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/albertstjarne/CA/depolarize/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/albertstjarne/CA/depolarize/app/controllers/application_controller.rb": [
+        0,
+        0
+      ],
+      "/Users/albertstjarne/CA/depolarize/app/controllers/feeds_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/albertstjarne/CA/depolarize/app/controllers/welcome_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/albertstjarne/CA/depolarize/app/services/feeds_service.rb": [
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1538727403
+  }
+}
