@@ -25,9 +25,7 @@ Feature: Authentication (with Devise)
         When I fill in "Email" with "hi@email.com"
         And I fill in "Password" with "mypassword"
         And I click on the "Log in" link
-        Then I should see "Signed in successfully."
-        When I click on the "Signout" link
-        Then I should see "Signed out successfully."
+        Then I should see "Signed in successfully."        
     
     Scenario: Registered user can successfully sign-out
         Given I am logged in as "hi@email.com"
