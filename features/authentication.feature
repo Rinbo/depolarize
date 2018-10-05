@@ -18,7 +18,7 @@ Feature: Authentication (with Devise)
         Then I should see "Welcome! You have signed up successfully."
         And I should see "Depolarized Feed"
 
-    Scenario: Registered user can successfully login
+    Scenario: Registered user can successfully login and signout
         Given I am on the welcome page
         When I click on the "Login" link
         Then I am on the login page
@@ -26,3 +26,5 @@ Feature: Authentication (with Devise)
         And I fill in "Password" with "mypassword"
         And I click on the "Log in" link
         Then I should see "Signed in successfully."
+        When I click on the "Signout" link
+        Then I should see "Signed out successfully."
