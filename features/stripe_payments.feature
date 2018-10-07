@@ -19,5 +19,3 @@ Scenario: User can donate money
   And I fill in the stripe field "MM / YY" with "12/2020"
   And I submit the stripe form  
   Then I should see stripe message "Thanks, you donated EUR 5.00!"
-
- 
