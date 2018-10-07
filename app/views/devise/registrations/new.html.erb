@@ -23,7 +23,7 @@
     </div>
 
     <div class="field">
-      <%= f.label :affiliation %><br />
+      
       <%= f.hidden_field :affiliation, value: @affiliation %>
     </div>   
 
@@ -31,6 +31,8 @@
       <%= f.submit "Sign up" %>
     </div>
   <% end %>
+  
+  <%= link_to "Login with Facebook", user_facebook_omniauth_authorize_path, class:"text-left my-2" %>
 
   <%= render "devise/shared/links" %>
 </section>

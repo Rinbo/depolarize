@@ -11,4 +11,10 @@ Devise.setup do |config|
   config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
   config.reset_password_within = 6.hours
   config.sign_out_via = :delete
+  
+  config.omniauth :facebook,
+    Rails.application.credentials.facebook[:app_id],
+    Rails.application.credentials.facebook[:app_secret], 
+    {scope: 'email public_profile', callbackURL: '/auth/facebook/callback'}
+
 end

@@ -3,6 +3,10 @@
 
 .forms-container {
   @apply mx-auto mt-20 flex flex-col items-center;
+
+  div {
+    @apply my-2;
+  }
 }
 
 .btn {
