@@ -6,7 +6,7 @@ class DonationsController < ApplicationController
     @amount = 500
   
     customer = Stripe::Customer.create(
-      :email => current_user.email,
+      :email => params[:stripeEmail],
       :source  => params[:stripeToken]
     )
   
@@ -19,7 +19,7 @@ class DonationsController < ApplicationController
   
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to root_path
+    redirect_to feeds_path
   end
 
 end
