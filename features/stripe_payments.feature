@@ -1,3 +1,4 @@
+@javascript
 Feature: User can donate money
   As a User
   In order to show my appreciation for the service
@@ -12,12 +13,11 @@ Scenario: User can donate money
   Given I am logged in as "robin@email.com"
   And I visit the donation page  
   And I click on the "Pay with Card" stripe button
-  And I fill in the stripe field "email" with "robin.b@outlook.com"
+  And I fill in the stripe field "Email" with "robin.b@outlook.com"
   And I fill in the stripe field "Card number" with "4242 4242 4242 4242"
   And I fill in the stripe field "CVC" with "123"
-  And I fill in the stripe field "Expiry" with "12/2020"
-  And I submit the stripe form
-  Then I should be on the feeds page
-  And I should see "Thank you for your donation!"
+  And I fill in the stripe field "MM / YY" with "12/2020"
+  And I submit the stripe form  
+  Then I should see stripe message "Thanks, you donated EUR 5.00!"
 
  
