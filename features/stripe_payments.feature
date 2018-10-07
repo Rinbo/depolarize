@@ -10,9 +10,9 @@ Background:
 
 Scenario: User can donate money
   Given I am logged in as "robin@email.com"
-  And I visit the donation page
-  And I click on the "Donate" link
+  And I visit the donation page  
   And I click on the "Pay with Card" stripe button
+  And I fill in the stripe field "email" with "robin.b@outlook.com"
   And I fill in the stripe field "Card number" with "4242 4242 4242 4242"
   And I fill in the stripe field "CVC" with "123"
   And I fill in the stripe field "Expiry" with "12/2020"
