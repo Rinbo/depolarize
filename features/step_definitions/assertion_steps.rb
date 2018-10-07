@@ -14,7 +14,3 @@ end
 Then("I should be redirected to the news feed") do
   expect(current_path).to eq feeds_path
 end
-
-Then("I should be redirected to the welcome page") do
-  expect(current_path).to eq root_path
-end
