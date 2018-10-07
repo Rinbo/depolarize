@@ -13,7 +13,7 @@ Devise.setup do |config|
   config.sign_out_via = :delete
   
   config.omniauth :facebook,
-    Rails.application.credentials.facebook[:app_key],
+    Rails.application.credentials.facebook[:app_id],
     Rails.application.credentials.facebook[:app_secret], 
     {scope: 'email public_profile', callbackURL: '/auth/facebook/callback'}
 
