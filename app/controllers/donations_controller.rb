@@ -6,20 +6,20 @@ class DonationsController < ApplicationController
     @amount = 500
   
     customer = Stripe::Customer.create(
-      :email => params[:stripeEmail],
+      :email => current_user.email,
       :source  => params[:stripeToken]
     )
   
-    donation = Stripe::Donation.create(
+    donation = Stripe::Charge.create(
       :customer    => customer.id,
       :amount      => @amount,
       :description => 'Depolarize Doner',
-      :currency    => 'euro'
+      :currency    => 'eur'
     )
   
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to new_donation_path
+    redirect_to root_path
   end
 
 end
