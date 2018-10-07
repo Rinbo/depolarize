@@ -11,7 +11,8 @@ Background:
 
 Scenario: User can donate money
   Given I am logged in as "robin@email.com"
-  And I visit the donation page  
+  And I am on the welcome page
+  And I click on the "Donate" link  
   And I click on the "Pay with Card" stripe button
   And I fill in the stripe field "Email" with "robin.b@outlook.com"
   And I fill in the stripe field "Card number" with "4242 4242 4242 4242"
