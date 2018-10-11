@@ -17,6 +17,7 @@ gem 'tailwindcss', '~> 0.2.0'
 gem 'news-api'
 gem 'omniauth-facebook'
 gem 'devise'
+gem 'stripe'
 
 
 group :development, :test do

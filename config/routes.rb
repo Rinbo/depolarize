@@ -3,4 +3,5 @@ Rails.application.routes.draw do
     registrations: 'users/registrations', omniauth_callbacks: :omniauth_callbacks }
   root controller: :welcome, action: :index
   resources :feeds,  only: [:index]
+  resources :donations
 end
