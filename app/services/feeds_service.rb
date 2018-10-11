@@ -9,8 +9,7 @@ module FeedsService
                           sources: source,
                           domains: domains,                          
                           language: 'en',
-                          sortBy: 'relevancy',
-                          page: 2)  
+                          sortBy: 'relevancy')  
     
   end
 end
