@@ -24,3 +24,7 @@ Then("I should see stripe message {string}") do |message|
   sleep 4
   expect(page).to have_content message
 end
+
+Then("I should not see stripe message {string}") do |message|
+  expect(page).not_to have_content message
+end
