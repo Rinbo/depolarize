@@ -4,6 +4,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def new
     @affiliation = params[:affiliation]
+    Rails.cache.write("affiliation", @affiliation)
     super    
   end
 

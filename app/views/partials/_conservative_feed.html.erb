@@ -1,7 +1,7 @@
 <h1 class="text-center mt-4 text-red-darker">Depolarized Feed</h1><br>
   <% @conservative_feed.each do |article| %>
     <div class="container mx-auto mb-2 px-4 min-w-3xl w-full lg:flex">
-      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= article.urlToImage %>)"></div>
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= article.urlToImage %>); background-position: center;"></div>
       <div class="border-r min-w-full border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 opacity-75">
         <div class="mb-8">
             <h2 class="text-black font-bold text-xl mb-2 my-4 article-title"><%= article.title%></h2>            

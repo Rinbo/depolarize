@@ -1,0 +1,21 @@
+<div class="container mx-auto mt-20 text-center">
+  <p class="mb-6"> The founders of Depolarize are thankful for any help that we can get to continue to maintain this app.
+  <%= form_tag donations_path do %>
+    <article>
+      <% if flash[:error].present? %>
+        <div id="error_explanation">
+          <p><%= flash[:error] %></p>
+        </div>
+      <% end %>
+      <label class="amount">
+        <span>Amount: EUR 5.00</span>
+      </label>
+    </article>
+
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-description="A little donation"
+            data-amount="500"
+            data-locale="auto"></script>
+  <% end %>
+</div>
